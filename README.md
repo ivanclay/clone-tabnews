@@ -20,6 +20,10 @@ npm run test:watch
 
 ## Git basic commands
 
+git pull
 git status
 git add .
+git add -A
 git status
+git commit -m 'commit message'
+git push
