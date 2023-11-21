@@ -24,6 +24,10 @@ git pull
 git status
 git add .
 git add -A
-git status
+git add -am 'commit message'
 git commit -m 'commit message'
 git push
+
+## VS Code Fuzzy Search
+
+ctrl + p / cmd + p

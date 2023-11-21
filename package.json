@@ -5,6 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev -p 3001",
+    "devenv": "npm run services:up && next dev -p 3001 ",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
+    "up": "npm run services:up",
+    "stop": "npm run services:stop",
+    "down": "npm run services:down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
